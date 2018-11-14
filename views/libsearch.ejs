@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    
+  </title>
+  <link rel="stylesheet" href="/vendor/boostrap/dist/css/bootstrap.css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/vendor/jquery/dist/jquery.js"></script>
+  <script src="/vendor/boostrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">File search within project!</h1>
+      <p class="lead">This is a simple library file finder from file system. It will present you all the library files
+        list.</p>
+    </div>
+    <form action="/libsearch" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="filePath">File Path</label>
+          <input type="text" class="form-control" id="filePath" placeholder="Provide file path" name="filePath" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="extension">Provide Extension</label>
+          <input type="text" class="form-control" id="extension" placeholder="Provide Extension to filter" name="ext" required><span>eg. js, css</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="match">Provide any match</label>
+        <input type="text" class="form-control" id="match" placeholder="match" name="match">
+      </div>
+      <div class="form-group">
+        <label for="size">Filter by size </label>
+        <input type="text" class="form-control" id="size" placeholder="Filter by size" name="size">
+      </div>
+      <button type="submit" class="btn btn-primary">Find</button>
+    </form>
+  </div>
+</body>
+
+</html>

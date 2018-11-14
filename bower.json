@@ -1,0 +1,21 @@
+{
+  "name": "duplicate-file-finder",
+  "description": "",
+  "main": "",
+  "authors": [
+    "chirag <chirag_patel4@dell.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "bootstrap#^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}

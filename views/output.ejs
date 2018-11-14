@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+
+  </title>
+  <link rel="stylesheet" href="/vendor/boostrap/dist/css/bootstrap.css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/vendor/jquery/dist/jquery.js"></script>
+  <script src="/vendor/boostrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="well">
+      <h4>List of files</h4>
+    </div>
+    <ul class="list-group">
+      <% for(var i=0; i<data.length; i++) {%>
+      <li class="list-group-item">
+        <%= data[i] %>
+      </li>
+      <% } %>
+
+    </ul>
+  </div>
+</body>
+
+</html>
